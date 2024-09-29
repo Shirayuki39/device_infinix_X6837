@@ -29,5 +29,9 @@ type sysfs_aichg_file, fs_type, sysfs_type;
 type sysfs_sub_torch_file, fs_type, sysfs_type;
 type sysfs_torch_file, fs_type, sysfs_type;
 
+# Touch
+type proc_main_game_state, fs_type, proc_type, sysfs_type;
+type proc_game_state, fs_type, proc_type, sysfs_type;
+
 # VMAX
 type aw87xxx_vmax, fs_type, sysfs_type;
