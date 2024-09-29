@@ -11,6 +11,8 @@ allow hal_fingerprint_default vendor_gf_data_file:dir create_dir_perms;
 allow hal_fingerprint_default vendor_gf_data_file:file create_file_perms;
 allow hal_fingerprint_default property_socket:sock_file write;
 allow hal_fingerprint_default fpsensor_fp_device:chr_file { ioctl read write open };
+allow hal_fingerprint_default fp_ext_svc2_service:hwservice_manager add;
+allow hal_fingerprint_default fp_ext_svc2_service:hwservice_manager find;
 dontaudit hal_fingerprint_default hal_power_hwservice:hwservice_manager find;
 
 set_prop(hal_fingerprint_default, ctl_default_prop)
